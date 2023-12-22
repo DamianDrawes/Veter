@@ -1,0 +1,102 @@
+.header{
+    background-image: linear-gradient(rgba(4, 18, 73, 0.3),rgb(4,9,30,0.1)),url(../img/atencion.jpg);
+    border-bottom: 5px solid var(--base);
+}
+
+.panelBox{
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+    gap: 2%;
+}
+.box{
+    flex: 1;
+    background-color: var(--baseo);
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+.box h2{
+    padding-top: 20px;
+}
+.box p{
+    font-size: 20px;
+    transition: all 0.5s;
+    padding: 10px;
+    height: 0;
+    opacity: 0;
+}
+.box img{
+    width: 90%;
+    height: 65%;
+    border-radius: 30px;
+}
+
+.box:hover > img{
+    width: 120px;
+    height: 60px;
+    min-height: 60px;
+}
+.box:hover > p{
+    opacity: 1;
+    height: auto;
+}
+
+@media(max-width:700px){
+    .panelBox{
+        flex-direction: column;
+        width: 60%;
+        gap: 20px;
+    }
+    .box p{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .box h2{
+        padding-top: 10px;
+        font-size: 18px;
+    }
+}
+
+.MasInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--baseo);
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.MasInfo div{
+    padding: 15px;
+}
+.MasInfo div ul li{
+    list-style: none;
+    padding: 5px;
+}
+.MasInfo div a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    transition: all 0.5s;
+}
+.MasInfo div a:hover{
+    color: white;
+}
+.MasInfo div h2{
+    padding: 15px;
+}
+.MasInfo div p{
+    margin: 15px;
+}
+
+@media(max-width:700px){
+    .MasInfo{
+        flex-direction: column;
+        width: 60%;
+    }
+}

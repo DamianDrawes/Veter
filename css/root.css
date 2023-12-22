@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+:root{
+    --base: rgb(0, 102, 204);
+    --baseo: rgb(0, 102, 204,0.5);
+    --blanco: rgba(219, 228, 228, 0.233);
+    --base2:rgb(34, 139, 34);
+    --base2o:rgb(34, 139, 34,0.5);
+    --base3: rgb(139, 69, 19);
+    --base3o: rgb(139, 69, 19,0.5);
+}

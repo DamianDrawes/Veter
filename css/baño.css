@@ -1,0 +1,62 @@
+.header{
+    background-image: linear-gradient(rgba(4, 18, 73, 0.3),rgb(4,9,30,0.1)),url(../img/baños.jpg);
+    background-position: left;
+    border-bottom: 5px solid var(--base);
+}
+.nav-links ul li a{
+    color: black;
+}
+.sectionB{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.divB{
+    display:flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: left;
+    align-items: center;
+    background-color: var(--blanco);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.divB h1{
+    font-size: 30px;
+}
+.divB h2{
+    font-size: 18px;
+}
+.divB p{
+    font-size: 15px;
+    padding: 10px;
+}
+.divB img{
+    flex: 1;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.divB div{
+    margin-left: 50px;
+    flex: 1;
+}
+
+@media(max-width:700px){
+    .divB{
+        flex-direction: column;
+    }
+    .servicios h1{
+        font-size: 22px;
+    }
+    .servicios h2{
+        font-size: 15px;
+    }
+    .divB div{
+        padding: 25px;
+    }
+}

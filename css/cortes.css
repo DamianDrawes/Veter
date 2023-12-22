@@ -1,0 +1,83 @@
+.header{
+    background-image: linear-gradient(rgba(4, 18, 73, 0.3),rgb(4,9,30,0.1)),url(../img/cortes.jpg);
+    border-bottom: 5px solid var(--blanco);
+}
+.diseño{
+    text-align: center;
+}
+.diseño h1{
+    margin-top: 50px;
+    font-size: 30px;
+}
+.text{
+    width: 80%;
+    margin: 50px auto;
+    background-color: var(--blanco);
+    border-radius: 20px;
+    padding: 15px;
+}
+.text p{
+    padding: 15px;
+}
+.text a{
+    color:var(--base);
+    padding: 10px;
+    border: solid 1px var(--base);
+    text-decoration: none;
+    border-radius: 15px;
+    transition: all 1s;
+}
+.text a:hover{
+    background-color: var(--baseo);
+    color: black;
+}
+.text h2{
+    padding: 10px;
+}
+.conteinerCortes{
+    width: 65%;
+    position:relative;
+    padding: 1%;
+    margin: auto;
+    overflow: hidden;
+    background-color: var(--blanco);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.cortes{
+    width: 450%;
+    margin-left: -50%;
+    display:flex;
+}
+.cortes img{
+    width: 50%;
+    border-radius: 25px;
+    margin: 1%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+.botones{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    padding: 5px;
+    background-color: var(--blanco);
+    border: solid 1px black;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+#derecha{
+    right: 1px;
+}
+#izquierda{
+    left: 0;
+}
+
+@media(max-width:700px){
+    .conteinerCortes{
+        width: 80%;
+    }
+}
